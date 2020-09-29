@@ -28,4 +28,16 @@ public class LuckySkyScraper {
         }
         return -1; //couldnt find real floor number
     }
+
+    static public int toFakeFloor(int realFloorGoal){
+        //loop through real floor numbers
+        var fakeFloor = 1;
+        for(var realFloor = 1; realFloor < realFloorGoal; realFloor++){
+
+            do {
+                fakeFloor++;
+            } while(fakeFloor % 10 == 4 || fakeFloor % 100 == 13);
+        }
+        return fakeFloor; //ends the loop and the method
+    }
 }
