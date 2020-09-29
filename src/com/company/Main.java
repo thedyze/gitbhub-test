@@ -4,8 +4,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        LuckySkyScraper.floorList(200);
-	// write your code here
+        System.out.println(LuckySkyScraper.toRealFloor(15));
+
     }
 
 
